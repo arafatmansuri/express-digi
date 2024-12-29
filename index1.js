@@ -1,6 +1,7 @@
+import "dotenv/config";
 import express from "express";
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 let ids = 1;
@@ -22,10 +23,8 @@ app.get("/home", (req, res) => {
 //Reading data using id:
 app.get("/home/:id", (req, res) => {
   const Dataid = data.filter((t) => t.id === parseInt(req.params.id));
-   res.status(200).send(Dataid);
+  res.status(200).send(Dataid);
 });
-
-
 
 //Updating data :
 app.put("/home/:id", (req, res) => {
