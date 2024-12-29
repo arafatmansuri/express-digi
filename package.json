@@ -1,0 +1,17 @@
+{
+  "name": "backend-manager",
+  "version": "1.0.0",
+  "main": "index1.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index1.js",
+    "dev": "nodemon index1.js"
+  },
+  "author": "MohammedArafat",
+  "license": "ISC",
+  "description": "starting backend",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
